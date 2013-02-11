@@ -26,7 +26,7 @@ var i18n = {
         "Karte": "Karte:",
 	"Nomenklaturen" :"Nomenklaturen:",
         "Gletscher der Schweiz": "Gletscher der Schweiz",
-	"Use case realized with GeoAdmin 2.5": "Umgesetzt mit GeoAdmin 2.5"
+	"Realized with geoadmin": "Umgesetzt mit GeoAdmin 2.5"
 
     },
     'fr': {
@@ -48,7 +48,7 @@ var i18n = {
         "Karte": "Karte:",
 	"Nomenklaturen" :"Nomenklaturen:",
         "Gletscher der Schweiz": "Gletscher der Schweiz",
-	"Use case realized with GeoAdmin 2.5": "Umgesetzt mit GeoAdmin 2.5"
+	"Realized with geoadmin": "Umgesetzt mit GeoAdmin 2.5"
     },
     'it': { 
 	"title": "Morteratschgletscher: Ein Eisriese schwindet",
@@ -69,7 +69,7 @@ var i18n = {
         "Karte": "Karte:",
 	"Nomenklaturen" :"Nomenklaturen:",
         "Gletscher der Schweiz": "Gletscher der Schweiz",
-	"Use case realized with GeoAdmin 2.5": "Umgesetzt mit GeoAdmin 2.5"
+	"Realized with geoadmin": "Umgesetzt mit GeoAdmin 2.5"
     },
     'en': {
 	"title": "Morteratschgletscher: Ein Eisriese schwindet",
@@ -90,7 +90,7 @@ var i18n = {
         "Karte": "Karte:",
 	"Nomenklaturen" :"Nomenklaturen:",
         "Gletscher der Schweiz": "Gletscher der Schweiz",
-	"Use case realized with GeoAdmin 2.5": "Umgesetzt mit GeoAdmin 2.5"
+	"Realized with geoadmin": "Umgesetzt mit GeoAdmin 2.5"
     }
 };
 
