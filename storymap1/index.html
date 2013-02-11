@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="files/storymap.css">
+<script type="text/javascript" src="js/mustache.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/i18n.js"></script>
+<title>{{title}}</title>
+</head>
+
+<body onload="init()">
+<div style="left: 0px; top: 0px; width: 100%; height: 125px;" class=" x-border-panel">
+<div id="header">
+  <div class="header_sub">  
+    	<div style="left: 0px; position: absolute; top: 0;">
+      		<img src="files/img/storymaps-banner-left.jpg" width="613" height="103">
+      	</div> 
+  		<div style="right: 0px; position: absolute; top: 0;">
+      		<img src="files/img/storymaps-banner-right.jpg" width="549" height="103" />
+   		</div>    
+  </div>
+
+  <div class="navServiceBackground">
+    <div style="float: right">
+      <ul class="inline-list">
+        <li><a class="selected" href="">Deutsch</a></li>
+        <li class="pipe">&nbsp;</li>
+        <li><a href=#>Français</a></li>
+        <li class="pipe">&nbsp;</li>
+        <li><a href="">Italiano</a></li>
+        <li class="pipe">&nbsp;</li>
+        <li><a href="">English</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div id="map" style="position: absolute; left: 0px; top: 123px; width: 100%; height: 100%;"></div>
+  
+  
+<div id="infobox">
+    <div class="title"><h1>{{title}}</h1></div>
+        <div class="abstract">
+            {{Zusammenfassung}}
+	</div>
+	<div class="moreinfo">
+        <h2>{{Weitere Infos}}</h2>
+        {{Weitere Gletscher}}
+		<ul>
+			<li>Aletschgletscher : <a href="http://s.geo.admin.ch/b94b6b21">http://s.geo.admin.ch/b94b6b21</a>
+			<li>Unterer Grindelwaldgletscher: <a href="http://s.geo.admin.ch/997799fe">"http://s.geo.admin.ch/997799fe<a/>
+			<li>Gornergletscher: <a href="http://s.geo.admin.ch/cb0bbaf2">http://s.geo.admin.ch/cb0bbaf2</a>
+		</ul>
+        {{Meteoschweiz}}: <a href="http://www.meteoschweiz.admin.ch/web/de/meteoschweiz/internationales/gcos/uebersicht_klimabeobachtung/nationales_klimabeobachtungssystem/gletscher.html">Global Climate Observing System (GICOS)</a> 
+
+        {{Bundesamt für Umwelt}} <a href="http://www.bafu.admin.ch/umwelt/indikatoren/08557/08570/index.html?lang=d">Klima Indikator Gletschwerschwund</a>
+        {{Bundesamt für Landestopografie swisstopo}} <a href="http://s.geo.admin.ch/e0dff89">Die Schweiz während des letzteiszeitlichen Maximums</a>
+        {{Bundesamt für Statistik}} {{Arealstatistik}}
+		<ul>
+            <li>{{Karte}}: <a href="http://s.geo.admin.ch/223c5feb">{{Arealstatistik}}</a>
+            <li>{{Nomenklaturen}}: <a href=" http://www.bfs.admin.ch/bfs/portal/de/index/infothek/nomenklaturen/blank/blank/noas04/05/05_42.html">{{Arealstatistik: Gletscher}}</a>
+            <li>{{Gletscher der Schweiz}}: <a href="http://www.bfs.admin.ch/bfs/portal/de/index/infothek/lexikon/lex/0.Document.20707.xls">http://www.bfs.admin.ch/bfs/portal/de/index/infothek/lexikon/lex/0.Document.20707.xls</a>
+
+
+	        </ul>
+	</div>
+        <div class="colophon">
+            {{Use case realized with GeoAdmin 2.5}}: <a href="http://api.geo.admin.ch">api.geo.admin.ch</a>
+	</div>
+
+
+</div>
+
+<script type="text/javascript" src="http://api.geo.admin.ch/loader.js"></script>
+<script type="text/javascript" src="js/storymap.js"></script>
+</body>
+</html>
