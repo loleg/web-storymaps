@@ -30,25 +30,25 @@ var i18n = {
 
     },
     'fr': {
-        "title": "Morteratschgletscher: Ein Eisriese schwindet",
-	"Zusammenfassung" : "Der lange Morteratschgletscher hat sich seit Beginn der Messungen im Jahre 1878 ununterbrochen " +
+        "title": "Glacier de Morteratsch: Un géant de glace disparait",
+	"Zusammenfassung" : "La longueur du glacier de Morteratsch hat sich seit Beginn der Messungen im Jahre 1878 ununterbrochen " +
 		         "zurückgezogen. Im Durchschnitt beträgt der Rückgang 16 Meter/ Jahr. In wärmeren Phasen (1935 bis 1965) wurde ein Rückgang"+
 			" bis zu 48 Meter pro Jahr gemessen. Seit den 1990-er Jahren ist eine Verstärkung des Schwundes zu verzeichnen."+
 		        " (Karte: Siegfriedkarte 1875/1876 und Landeskarte 2009",
 
-        "Weitere Infos": "Weitere Infos",
+        "Weitere Infos": "Informations détaillées",
 
-	"Weitere Gletscher": "Weitere Gletscher (Zeitreihe)",
-	"Meteoschweiz":  "Meteoschweiz",
-	"Bundesamt für Umwelt": "Bundesamt für Umwelt",
-	"Bundesamt für Landestopografie swisstopo": "Bundesamt für Landestopografie swisstopo",
-	"Bundesamt für Statistik" :"Bundesamt für Statistik",
-	"Arealstatistik": "Arealstatistik",
-	"Arealstatistik: Gletscher": "Arealstatistik: Gletscher",
-        "Karte": "Karte:",
-	"Nomenklaturen" :"Nomenklaturen:",
-        "Gletscher der Schweiz": "Gletscher der Schweiz",
-	"Realized with geoadmin": "Umgesetzt mit GeoAdmin 2.5"
+	"Weitere Gletscher": "Autres glaciers (séries temporelles)",
+	"Meteoschweiz":  "Meteosuisse",
+	"Bundesamt für Umwelt": "Office Fédéral de l'Environnement",
+	"Bundesamt für Landestopografie swisstopo": "Office fédéral de topographie swisstopo",
+	"Bundesamt für Statistik" :"Office Fédéral de la statistique",
+	"Arealstatistik": "Statistiques de superficie",
+	"Arealstatistik: Gletscher": "Statistiques de superficie: Glacier",
+        "Karte": "Carte:",
+	"Nomenklaturen" :"Nomenclature",
+        "Gletscher der Schweiz": "Glacier de la Suisse",
+	"Realized with geoadmin": "Réalisé avec GeoAdmin 2.5"
     },
     'it': { 
 	"title": "Morteratschgletscher: Ein Eisriese schwindet",
@@ -72,7 +72,7 @@ var i18n = {
 	"Realized with geoadmin": "Umgesetzt mit GeoAdmin 2.5"
     },
     'en': {
-	"title": "Morteratschgletscher: Ein Eisriese schwindet",
+	"title": "Morteratsch glacier: An eis giant has vanished",
 	"Zusammenfassung" : "Der lange Morteratschgletscher hat sich seit Beginn der Messungen im Jahre 1878 ununterbrochen " +
 		         "zurückgezogen. Im Durchschnitt beträgt der Rückgang 16 Meter/ Jahr. In wärmeren Phasen (1935 bis 1965) wurde ein Rückgang"+
 			" bis zu 48 Meter pro Jahr gemessen. Seit den 1990-er Jahren ist eine Verstärkung des Schwundes zu verzeichnen."+
