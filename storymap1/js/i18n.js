@@ -4,6 +4,11 @@ function getURLParameter(key) {
     return result && result[1] || ""; 
 }
 
+function toggleLang(lang) {
+    var lang = lang || 'de';
+    document.location = document.location.pathname + "?lang="+ lang;
+}
+
 
 <!-- Warning: always concatenate long text lines -->
 var i18n = {
@@ -96,6 +101,13 @@ var i18n = {
 
 var lang = getURLParameter('lang') || 'de';
 
+
+$('#lang').ready(function () {
+    $("#lang li").each(function() {
+        var li = $(this)[0]; 
+        if (li.id == lang) $(this).addClass('selected');
+    });
+});
 
 $('#infobox').ready(function () {
     document.title = i18n[lang].title;

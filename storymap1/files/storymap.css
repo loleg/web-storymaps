@@ -40,6 +40,7 @@ html, body, div, ul, li {
 .inline-list li {
   display: inline;
   float: left;
+  cursor:pointer;
 }
 
 .selected {
