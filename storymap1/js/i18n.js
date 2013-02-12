@@ -115,6 +115,6 @@ $('#infobox').ready(function () {
     var tpl = info.html();
     var html = Mustache.to_html(tpl, i18n[lang]);
     info.html(html);
-    info.css('visibility', 'visible');
+    info.show(2000);
 });
 
