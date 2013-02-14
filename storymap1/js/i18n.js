@@ -33,7 +33,7 @@ var i18n = {
         "Karte": "Karte:",
 	"Nomenklaturen" :"Nomenklaturen:",
         "Gletscher der Schweiz": "Gletscher der Schweiz",
-	"Realized with geoadmin": "Umgesetzt mit GeoAdmin",
+	"Realized with": "Umgesetzt mit",
 	"Copyright and Data protection": "Copyright und Datenschutzerklärung" 
 
 
@@ -59,7 +59,7 @@ var i18n = {
         "Karte": "Carte:",
 	"Nomenklaturen" :"Nomenclature",
         "Gletscher der Schweiz": "Glacier de la Suisse",
-	"Realized with geoadmin": "Réalisé avec GeoAdmin",
+	"Realized with": "Réalisé avec",
 	"Copyright and Data protection": "Conditions d'utilisation"
     },
     'it': { 
@@ -82,7 +82,7 @@ var i18n = {
         "Karte": "Cartina:",
 	"Nomenklaturen" :"Nomenclatura:",
         "Gletscher der Schweiz": "Ghiacciai svizzeri",
-	"Realized with geoadmin": "Realizzato con GeoAdmin",
+	"Realized with": "Realizzato con",
 	"Copyright and Data protection": "Copyright e protezione dei diritti d'autore"
     },
     'en': {
@@ -105,7 +105,7 @@ var i18n = {
         "Karte": "Map:",
 	"Nomenklaturen" :"Nomenclature:",
         "Gletscher der Schweiz": "Swiss glacier",
-	"Realized with geoadmin": "Realized with GeoAdmin",
+	"Realized with": "Realized with",
 	"Copyright and Data protection": "Copyright and Data protection"
 
     }
