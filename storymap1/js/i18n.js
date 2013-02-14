@@ -17,85 +17,97 @@ var i18n = {
 	"Zusammenfassung" : "Der lange Morteratschgletscher hat sich seit Beginn der Messungen im Jahre 1878 ununterbrochen " +
 		         "zurückgezogen. Im Durchschnitt beträgt der Rückgang 16 Meter/ Jahr. In wärmeren Phasen (1935 bis 1965) wurde ein Rückgang"+
 			" bis zu 48 Meter pro Jahr gemessen. Seit den 1990-er Jahren ist eine Verstärkung des Schwundes zu verzeichnen."+
-		        " (Karte: Siegfriedkarte 1875/1876 und Landeskarte 2009",
+		        " (Karte: Siegfriedkarte 1875/1876 und Orthobilder 2009)",
 
         "Weitere Infos": "Weitere Infos",
 
 	"Weitere Gletscher": "Weitere Gletscher (Zeitreihe)",
 	"Meteoschweiz":  "Meteoschweiz",
 	"Bundesamt für Umwelt": "Bundesamt für Umwelt",
+	"Klima Indikator Gletschwerschwund": "Klima Indikator Gletschwerschwund",
 	"Bundesamt für Landestopografie swisstopo": "Bundesamt für Landestopografie swisstopo",
+	"Die Schweiz während letzteiszeitlichen Maximums": "Die Schweiz während letzteiszeitlichen Maximums",
 	"Bundesamt für Statistik" :"Bundesamt für Statistik",
 	"Arealstatistik": "Arealstatistik",
 	"Arealstatistik: Gletscher": "Arealstatistik: Gletscher",
         "Karte": "Karte:",
 	"Nomenklaturen" :"Nomenklaturen:",
         "Gletscher der Schweiz": "Gletscher der Schweiz",
-	"Realized with geoadmin": "Umgesetzt mit GeoAdmin 2.5"
+	"Realized with geoadmin": "Umgesetzt mit GeoAdmin",
+	"Copyright and Data protection": "Copyright und Datenschutzerklärung" 
+
 
     },
     'fr': {
         "title": "Glacier de Morteratsch: Un géant de glace disparait",
-	"Zusammenfassung" : "La longueur du glacier de Morteratsch hat sich seit Beginn der Messungen im Jahre 1878 ununterbrochen " +
-		         "zurückgezogen. Im Durchschnitt beträgt der Rückgang 16 Meter/ Jahr. In wärmeren Phasen (1935 bis 1965) wurde ein Rückgang"+
-			" bis zu 48 Meter pro Jahr gemessen. Seit den 1990-er Jahren ist eine Verstärkung des Schwundes zu verzeichnen."+
-		        " (Karte: Siegfriedkarte 1875/1876 und Landeskarte 2009",
+	"Zusammenfassung" : "La longueur du glacier de Morteratsch n'a cessé de diminuer depuis le début des mesures effectuées en 1878. " +
+		         "Sa longueur diminue d'environ 16 metres/année. Durant les phases plus chaudes (1935-1965) des diminutions allant jusqu'ŕ 48 metres/année ont été observées. "+
+			" Depuis les années 1990 on a constaté une augmentation du taux de retrait du glacier."+
+		        " (Carte: Carte Siegfried 1875/1876 et Orthophotos 2009)",
 
         "Weitere Infos": "Informations détaillées",
 
 	"Weitere Gletscher": "Autres glaciers (séries temporelles)",
 	"Meteoschweiz":  "Meteosuisse",
 	"Bundesamt für Umwelt": "Office Fédéral de l'Environnement",
+	"Klima Indikator Gletschwerschwund": "Indicateur du recul des glaciers",
 	"Bundesamt für Landestopografie swisstopo": "Office fédéral de topographie swisstopo",
+	"Die Schweiz während letzteiszeitlichen Maximums": "La Suisse durant le dernier maximum glaciaire",
 	"Bundesamt für Statistik" :"Office Fédéral de la statistique",
 	"Arealstatistik": "Statistiques de superficie",
 	"Arealstatistik: Gletscher": "Statistiques de superficie: Glacier",
         "Karte": "Carte:",
 	"Nomenklaturen" :"Nomenclature",
         "Gletscher der Schweiz": "Glacier de la Suisse",
-	"Realized with geoadmin": "Réalisé avec GeoAdmin 2.5"
+	"Realized with geoadmin": "Réalisé avec GeoAdmin",
+	"Copyright and Data protection": "Conditions d'utilisation"
     },
     'it': { 
-	"title": "Morteratschgletscher: Ein Eisriese schwindet",
-	"Zusammenfassung" : "Der lange Morteratschgletscher hat sich seit Beginn der Messungen im Jahre 1878 ununterbrochen " +
-		         "zurückgezogen. Im Durchschnitt beträgt der Rückgang 16 Meter/ Jahr. In wärmeren Phasen (1935 bis 1965) wurde ein Rückgang"+
-			" bis zu 48 Meter pro Jahr gemessen. Seit den 1990-er Jahren ist eine Verstärkung des Schwundes zu verzeichnen."+
-		        " (Karte: Siegfriedkarte 1875/1876 und Landeskarte 2009",
+	"title": "Ghiacciaio del Morteratsch : un gigante di ghiaccio in declino",
+	"Zusammenfassung" : "Il lungo ghiacciaio del Morteratsch non ha mai cessato, dall'inizio delle misurazioni nel 1878, di ritirarsi. In media la lingua di ghiaccio si e ritirata di 16 metri ogni anno.  " +
+		         "Nelle fasi piu calde (dal 1935 al 1965) sono state misurate riduzioni di lunghezza sino a 48 metri all'anno. A partire dagli anni '90 si e registrato un'ulteriore crescita del "+
+			" tasso di ritirata del ghiacciaio. (cartina: carta Siegfried 1875/1876 e Ortofoto 2009)",
 
-        "Weitere Infos": "Weitere Infos",
+        "Weitere Infos": "Ulteriori informazioni",
 
-	"Weitere Gletscher": "Weitere Gletscher (Zeitreihe)",
-	"Meteoschweiz":  "Meteoschweiz",
-	"Bundesamt für Umwelt": "Bundesamt für Umwelt",
-	"Bundesamt für Landestopografie swisstopo": "Bundesamt für Landestopografie swisstopo",
-	"Bundesamt für Statistik" :"Bundesamt für Statistik",
-	"Arealstatistik": "Arealstatistik",
-	"Arealstatistik: Gletscher": "Arealstatistik: Gletscher",
-        "Karte": "Karte:",
-	"Nomenklaturen" :"Nomenklaturen:",
-        "Gletscher der Schweiz": "Gletscher der Schweiz",
-	"Realized with geoadmin": "Umgesetzt mit GeoAdmin 2.5"
+	"Weitere Gletscher": "Altri ghiacciai",
+	"Meteoschweiz":  "Meteosvizzera",
+	"Bundesamt für Umwelt": "Ufficio federale dell'ambiente",
+	"Klima Indikator Gletschwerschwund": "Indicatori climatici sul ritiro dei ghiacciai",
+	"Bundesamt für Landestopografie swisstopo": "Ufficio federale di topografia swisstopo",
+	"Die Schweiz während letzteiszeitlichen Maximums": "La Svizzera durante l'ultimo massimo glaciale",
+	"Bundesamt für Statistik" :"Ufficio federale di statistica",
+	"Arealstatistik": "Statistica di superficie",
+	"Arealstatistik: Gletscher": "Statistica di superficie: ghiacciaio",
+        "Karte": "Cartina:",
+	"Nomenklaturen" :"Nomenclatura:",
+        "Gletscher der Schweiz": "Ghiacciai svizzeri",
+	"Realized with geoadmin": "Realizzato con GeoAdmin",
+	"Copyright and Data protection": "Copyright e protezione dei diritti d'autore"
     },
     'en': {
-	"title": "Morteratsch glacier: An eis giant has vanished",
-	"Zusammenfassung" : "Der lange Morteratschgletscher hat sich seit Beginn der Messungen im Jahre 1878 ununterbrochen " +
-		         "zurückgezogen. Im Durchschnitt beträgt der Rückgang 16 Meter/ Jahr. In wärmeren Phasen (1935 bis 1965) wurde ein Rückgang"+
-			" bis zu 48 Meter pro Jahr gemessen. Seit den 1990-er Jahren ist eine Verstärkung des Schwundes zu verzeichnen."+
-		        " (Karte: Siegfriedkarte 1875/1876 und Landeskarte 2009",
+	"title": "Morteratsch glacier: An ice giant is shrinking",
+	"Zusammenfassung" : "Since beginning of the monitoring in 1878, the Morteratsch glacier is retreating steadily with an " +
+		         "average recession rate of 16 meter/ year. During warmer phases (1935 - 1965) shrinking rates of up to 48 meter/ year have been observed. Since the 1990ies, an "+
+			" increase oft he recession ist he case. (Map: Siegfriedkarte 1875/1876 and Arial Imagery (2009)",
 
-        "Weitere Infos": "Weitere Infos",
+        "Weitere Infos": "More Information",
 
-	"Weitere Gletscher": "Weitere Gletscher (Zeitreihe)",
-	"Meteoschweiz":  "Meteoschweiz",
-	"Bundesamt für Umwelt": "Bundesamt für Umwelt",
-	"Bundesamt für Landestopografie swisstopo": "Bundesamt für Landestopografie swisstopo",
-	"Bundesamt für Statistik" :"Bundesamt für Statistik",
-	"Arealstatistik": "Arealstatistik",
-	"Arealstatistik: Gletscher": "Arealstatistik: Gletscher",
-        "Karte": "Karte:",
-	"Nomenklaturen" :"Nomenklaturen:",
-        "Gletscher der Schweiz": "Gletscher der Schweiz",
-	"Realized with geoadmin": "Umgesetzt mit GeoAdmin 2.5"
+	"Weitere Gletscher": "Other glacier (Time Series)",
+	"Meteoschweiz":  "MeteoSwiss",
+	"Bundesamt für Umwelt": "Federal Office for the Environment",
+	"Klima Indikator Gletschwerschwund": "Indicator Glacier retreat",
+	"Bundesamt für Landestopografie swisstopo": "Federal Office of Topography swisstopo",
+	"Die Schweiz während letzteiszeitlichen Maximums": "Swiss last glacial maximum",
+	"Bundesamt für Statistik" :"Federal Office of Statistics",
+	"Arealstatistik": "Area Statistics",
+	"Arealstatistik: Gletscher": "Area Statistics: Glacier",
+        "Karte": "Map:",
+	"Nomenklaturen" :"Nomenclature:",
+        "Gletscher der Schweiz": "Swiss glacier",
+	"Realized with geoadmin": "Realized with GeoAdmin",
+	"Copyright and Data protection": "Copyright and Data protection"
+
     }
 };
 
