@@ -22,7 +22,7 @@ var i18n = {
         "Weitere Infos": "Weitere Infos",
 
 	"Weitere Gletscher": "Weitere Gletscher (Zeitreihe)",
-	"Meteoschweiz":  "Meteoschweiz",
+	"MeteoSchweiz":  "MeteoSchweiz",
 	"Bundesamt für Umwelt": "Bundesamt für Umwelt",
 	"Klima Indikator Gletschwerschwund": "Klima Indikator Gletschwerschwund",
 	"Bundesamt für Landestopografie swisstopo": "Bundesamt für Landestopografie swisstopo",
@@ -41,14 +41,14 @@ var i18n = {
     'fr': {
         "title": "Glacier de Morteratsch: Un géant de glace disparait",
 	"Zusammenfassung" : "La longueur du glacier de Morteratsch n'a cessé de diminuer depuis le début des mesures effectuées en 1878. " +
-		         "Sa longueur diminue d'environ 16 metres/année. Durant les phases plus chaudes (1935-1965) des diminutions allant jusqu'ŕ 48 metres/année ont été observées. "+
+		         "Sa longueur diminue d'environ 16 metres/année. Durant les phases plus chaudes (1935-1965) des diminutions allant jusqu'a 48 metres/année ont été observées. "+
 			" Depuis les années 1990 on a constaté une augmentation du taux de retrait du glacier."+
 		        " (Carte: Carte Siegfried 1875/1876 et Orthophotos 2009)",
 
         "Weitere Infos": "Informations détaillées",
 
 	"Weitere Gletscher": "Autres glaciers (séries temporelles)",
-	"Meteoschweiz":  "Meteosuisse",
+	"MeteoSchweiz":  "MétéoSsuisse",
 	"Bundesamt für Umwelt": "Office Fédéral de l'Environnement",
 	"Klima Indikator Gletschwerschwund": "Indicateur du recul des glaciers",
 	"Bundesamt für Landestopografie swisstopo": "Office fédéral de topographie swisstopo",
@@ -57,8 +57,8 @@ var i18n = {
 	"Arealstatistik": "Statistiques de superficie",
 	"Arealstatistik: Gletscher": "Statistiques de superficie: Glacier",
         "Karte": "Carte:",
-	"Nomenklaturen" :"Nomenclature",
-        "Gletscher der Schweiz": "Glacier de la Suisse",
+	"Nomenklaturen" :"Nomenclature:",
+        "Gletscher der Schweiz": "Glaciers de la Suisse",
 	"Realized with": "Réalisé avec",
 	"Copyright and Data protection": "Conditions d'utilisation"
     },
@@ -71,7 +71,7 @@ var i18n = {
         "Weitere Infos": "Ulteriori informazioni",
 
 	"Weitere Gletscher": "Altri ghiacciai",
-	"Meteoschweiz":  "Meteosvizzera",
+	"MeteoSchweiz":  "MeteoSvizzera",
 	"Bundesamt für Umwelt": "Ufficio federale dell'ambiente",
 	"Klima Indikator Gletschwerschwund": "Indicatori climatici sul ritiro dei ghiacciai",
 	"Bundesamt für Landestopografie swisstopo": "Ufficio federale di topografia swisstopo",
@@ -88,13 +88,13 @@ var i18n = {
     'en': {
 	"title": "Morteratsch glacier: An ice giant is shrinking",
 	"Zusammenfassung" : "Since beginning of the monitoring in 1878, the Morteratsch glacier is retreating steadily with an " +
-		         "average recession rate of 16 meter/ year. During warmer phases (1935 - 1965) shrinking rates of up to 48 meter/ year have been observed. Since the 1990ies, an "+
-			" increase oft he recession ist he case. (Map: Siegfriedkarte 1875/1876 and Arial Imagery (2009)",
+		         "average recession rate of 16 meter/year. During warmer phases (1935 - 1965) shrinking rates of up to 48 meter/year have been observed. Since the 1990s, an "+
+			" increase of the recession is the case. (Map: Siegfriedkarte 1875/1876 and aerial imagery 2009)",
 
         "Weitere Infos": "More Information",
 
-	"Weitere Gletscher": "Other glacier (Time Series)",
-	"Meteoschweiz":  "MeteoSwiss",
+	"Weitere Gletscher": "Other glaciers (Time Series)",
+	"MeteoSchweiz":  "MeteoSwiss",
 	"Bundesamt für Umwelt": "Federal Office for the Environment",
 	"Klima Indikator Gletschwerschwund": "Indicator Glacier retreat",
 	"Bundesamt für Landestopografie swisstopo": "Federal Office of Topography swisstopo",
@@ -104,7 +104,7 @@ var i18n = {
 	"Arealstatistik: Gletscher": "Area Statistics: Glacier",
         "Karte": "Map:",
 	"Nomenklaturen" :"Nomenclature:",
-        "Gletscher der Schweiz": "Swiss glacier",
+        "Gletscher der Schweiz": "Swiss Glaciers",
 	"Realized with": "Realized with",
 	"Copyright and Data protection": "Copyright and Data protection"
 

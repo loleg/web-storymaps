@@ -1,12 +1,12 @@
 
 
-
+var map;
 
 function init() {
 
-    var map = new GeoAdmin.Map('map');
+    map = new GeoAdmin.Map('map');
 
-    map.zoomToExtent([776453.5,138490.5,808813.5,146970.5]);
+    map.zoomToExtent([781953.5,138370.5,801153.5,147780.5]);
 
     var swipe = new OpenLayers.Control.Swipe({map: map});
 
