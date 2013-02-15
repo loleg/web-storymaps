@@ -22,7 +22,7 @@ var i18n = {
         "Weitere Infos": "Weitere Infos",
 
 	"Weitere Gletscher": "Weitere Gletscher (Zeitreihe)",
-	"MeteoSchweiz":  "MeteoSchweiz",
+	"MeteoSchweiz": "MeteoSchweiz",
 	"Bundesamt für Umwelt": "Bundesamt für Umwelt",
 	"Klima Indikator Gletschwerschwund": "Klima Indikator Gletschwerschwund",
 	"Bundesamt für Landestopografie swisstopo": "Bundesamt für Landestopografie swisstopo",
@@ -48,7 +48,7 @@ var i18n = {
         "Weitere Infos": "Informations détaillées",
 
 	"Weitere Gletscher": "Autres glaciers (séries temporelles)",
-	"MeteoSchweiz":  "MétéoSsuisse",
+	"MeteoSchweiz": "MétéoSsuisse",
 	"Bundesamt für Umwelt": "Office Fédéral de l'Environnement",
 	"Klima Indikator Gletschwerschwund": "Indicateur du recul des glaciers",
 	"Bundesamt für Landestopografie swisstopo": "Office fédéral de topographie swisstopo",
@@ -71,7 +71,7 @@ var i18n = {
         "Weitere Infos": "Ulteriori informazioni",
 
 	"Weitere Gletscher": "Altri ghiacciai",
-	"MeteoSchweiz":  "MeteoSvizzera",
+	"MeteoSchweiz": "MeteoSvizzera",
 	"Bundesamt für Umwelt": "Ufficio federale dell'ambiente",
 	"Klima Indikator Gletschwerschwund": "Indicatori climatici sul ritiro dei ghiacciai",
 	"Bundesamt für Landestopografie swisstopo": "Ufficio federale di topografia swisstopo",
@@ -94,7 +94,7 @@ var i18n = {
         "Weitere Infos": "More Information",
 
 	"Weitere Gletscher": "Other glaciers (Time Series)",
-	"MeteoSchweiz":  "MeteoSwiss",
+	"MeteoSchweiz": "MeteoSwiss",
 	"Bundesamt für Umwelt": "Federal Office for the Environment",
 	"Klima Indikator Gletschwerschwund": "Indicator Glacier retreat",
 	"Bundesamt für Landestopografie swisstopo": "Federal Office of Topography swisstopo",
