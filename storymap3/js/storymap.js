@@ -60,6 +60,7 @@ function moveOneRank(inp){
 	fid =  getIdByIndex(ii);	
 	zoomToFeature(fid);
 	selectOverviewFeature(fid);
+	overviewMap.zoomToMaxExtent();
 }
 
 // get data of object and upadate objectinfo window
