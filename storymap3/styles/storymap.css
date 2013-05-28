@@ -1,0 +1,311 @@
+html, body, div, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: arial,helvetica,verdana,sans-serif;
+  list-style-type: circle;
+}
+
+a, a:link, a:active, td a:active, a:visited, td a:visited {
+    color: #3399cc;
+    text-decoration: none;
+}
+
+a, a:hover{
+    color: #3399cc;
+    text-decoration: underline;
+}
+
+#header {
+  background-color: white;
+  min-width: 680px;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  z-index:100;  
+}
+
+#header a {
+  color: black;
+  text-decoration: none;
+  font-size: .9em;
+  vertical-align: middle;
+}
+
+
+.navServiceBackground {
+  height: 19px;
+  line-height: 18px;
+  background-color: #ccc;
+  border-top: 0px solid white;
+  border-bottom: 1px solid black;
+  padding-right: 5px;
+  padding-left: 2px;
+  font-size: .75em;
+  letter-spacing: 0;
+}
+
+
+.header_sub {
+  height: 103px;
+}
+
+.inline-list {
+  list-style-type: none;
+}
+
+.inline-list li {
+  display: inline;
+  float: left;
+  cursor:pointer;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+.pipe {
+  background-image: url('../img/pipe.gif');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 9px;
+}
+
+#infobox {
+  position: absolute;
+  display: none;
+  color: #ffffff;
+  text-decoration: none;
+  right: 0px;
+  top: 10px;
+  right: 10px;
+  margin-right: 16px;
+  width: 330px;
+  background-image: url('../img/transparent.png');
+  border: solid 2px #FFFFFF;
+  margin: 10px;
+  border-radius: 10px;
+  z-index: 1000000;
+}
+
+#infobox a:link {
+  color: #3399cc;
+}
+
+#infobox ul {
+  list-style: square outside;
+  color: #ccc;
+}
+#infobox li {
+  margin-left: 20px; 
+}
+
+#infobox {
+  margin: 5px;
+}
+.title {
+  border-bottom: solid 2px #FFFFFF;
+  text-decoration: inherit;
+  padding: 10px;
+}
+
+.moreinfo {
+  border-bottom: solid 2px #FFFFFF;
+  text-decoration: inherit;
+}
+
+.abstract {
+  border-bottom: solid 2px #FFFFFF;
+  text-decoration: inherit;
+}
+
+.colophon {
+  text-decoration: inherit;
+  font-size: 10px;
+}
+
+.inner {
+  margin: 10px;
+}
+
+#mainWindow{
+	position: absolute;	
+	top: 124px; 
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: auto; 
+	margin: auto;	
+}
+
+#leftPanel{
+	position: absolute;
+	left: 0;
+	width: 40%;
+	overflow: hidden;
+	height: 100%;
+}
+
+#lo{
+	position: absolute;	
+	top: 0px;
+	bottom: 320px;
+	width: 100%;
+}
+
+#overviewMap{
+	height: 100%;
+	width: 100%;	
+}
+
+#lu{
+	height: 320px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-color: white;
+	z-index: 100000;	
+}
+
+#objectInfo{
+	display: none;
+	padding: 30px ;	
+}
+
+
+#rightPanel{
+	position: absolute;	
+	right: 0;
+	width: 60%;
+	height: 100%;
+}
+
+#ro{
+	position: absolute;
+	height: auto;
+	top: 0;
+	bottom: 250px;
+	width: 100%;
+}
+
+#detailMap{
+	height: 100%;
+	width: 100%;	
+	z-index:3000;
+}
+
+#ru{
+	position: absolute;
+	bottom: 0;
+	height: 250px;
+	width: 100%;
+}
+
+#chart{
+	position: absolute;	
+	left: 0px;
+	right: 0px;
+	padding: 50px 30px 20px;
+	height: 180px;
+}
+
+
+#webHeaderDiv {
+	width: 100%;
+	padding: 0;
+	margin: 0 0 1px 0;
+	height: 103px;
+	background-image: url(../img/background_header_4b.jpg);
+	background-repeat: no-repeat;
+}
+
+.info {
+	width: 100%;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+
+/********  object infobox and its content ********/ 
+
+table {
+	table-layout: fixed;
+}
+
+td	{
+	height: 50px;
+	vertical-align: top;
+}
+
+td
+
+#stauanlage { 
+	font-size: 1.7em;	
+	font-weight: bold; 
+}
+
+#sperrenhöhe {
+	font-size: 1.4em;	
+	font-weight: bold; 
+}
+
+
+#kronenkote {
+	font-weight: bold; 
+}
+
+#zweck {
+	font-weight: bold; 
+}
+
+#inbetriebnahme {
+	font-weight: bold; 
+}
+
+#sperrentyp {
+	font-weight: bold; 
+}
+
+#details {
+	height: 15px;
+}
+
+
+
+div.browserError{
+	padding: 10px;
+	top: 124px;
+	position: absolute;
+}
+
+h1.infobox{
+	font-size: 1.1em;
+	margin: 0 15px 0 0;
+}
+
+h2.infobox{
+	font-size: 1em;
+	margin: 0;
+}
+
+p.infobox{
+	font-size: 1em;
+	margin: 0;
+}
+
+h1.tips{
+	font-size: 1em;
+	margin: 0;
+}
+
+
+

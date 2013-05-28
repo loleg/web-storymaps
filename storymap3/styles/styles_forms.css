@@ -1,0 +1,321 @@
+/* *************************************************************************** */
+/* FORM-STYLES FÜR WEBSEITE                                                    */
+/* *************************************************************************** */
+
+#webSucheBroadDiv fieldset {
+  border:none;
+  padding:0;
+}
+/* EINGABEFELDER */
+.webFormInput {
+  border:1px solid #CFCFCF;
+  font-family: arial, helvetica, verdana, sans-serif;
+  color: #000000;
+  font-size: 1em;
+}
+
+.webTable .webFormInput {
+  margin-right:5px;
+}
+
+.webFormInputNormal {
+  width:120px;
+  border:1px solid #006699;
+  font-family: arial, helvetica, verdana, sans-serif;
+  color: #000000;
+  font-size: 1em;
+}
+
+.webFormSearchInput {
+  width:250px;
+  border:1px solid #CCC;
+  font-family: arial, helvetica, verdana, sans-serif;
+  color: #000000;
+  font-size: 1em;
+}
+
+.webFormSearchInputBox {
+  width:90px;
+  float:left;
+  margin-top:2px;
+  margin-bottom:5px;
+}
+
+.webFormSearchButton{
+  font-family: arial, helvetica, verdana, sans-serif;
+  font-size: 0.9em;
+  background-color:#CCC;
+  border:1px solid #333;
+  color:#333;
+  height:19px;
+  float:left;
+  margin:2px 0px 0px 4px;
+  padding:0px 0px 0px 0px;
+  width: 67px;
+}
+
+input.webFormButton {
+  font-family: arial, helvetica, verdana, sans-serif;
+  font-size: 0.9em;
+  height:19px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 3px 3px 0px;
+  border:1px solid #333;
+}
+
+.webFormInfoboxInput{
+  width: 135px;
+}
+
+/* *************************************************************************** */
+/* VOLLTEXTSUCHE                                                               */
+/* *************************************************************************** */
+
+#volltextsuche .webFormSearchButton{
+  margin:0px;
+  padding:0px;
+}
+
+/* ******************* */
+/* ***** WEBSHOP ***** */
+/* ******************* */
+
+.webShopGrauDiv label{
+  display:inline;
+  float:none;
+}
+.webShopGruenDiv label{
+  display:inline;
+  float:none;
+}
+
+/* ***************************** */
+/* ***** MAIL TO A FRIEND ****** */
+/* ***************************** */
+
+.mailtoafriendForm {
+  border-width:1px;
+  border-style:solid;
+  border-color:#CCC;
+  background-color:#FFFFFF;
+  font-family: arial, helvetica, verdana, sans-serif;
+  color: #000000;
+  font-size: 1em;
+  width:250px;
+}
+
+.mailtoafriendTextarea {
+  border-width:1px;
+  border-style:solid;
+  border-color:#CCC;
+  background-color:#FFFFFF;
+  width:250px;
+  height:120px;
+  font-family: arial, helvetica, verdana, sans-serif;
+  color: #000000;
+  font-size: 1em;
+}
+
+.mailtoafriendButton {
+  background:url(/images/icon_suchen.gif) right no-repeat #eee;
+  font-size:1.0em;
+  font-weight:bold;
+  color:#333;
+  padding-right:25px;
+}
+
+.mailtoafriendButtonBack {
+  background:url(/images/zurueck.gif) left no-repeat #eee;
+  font-size:1.0em;
+  font-weight:bold;
+  color:#333;
+  padding-left:45px;
+  padding-right:25px;
+}
+
+a.mailtoafriendButtonBack:link,a.mailtoafriendButtonBack:active,a.mailtoafriendButtonBack:visited,a.mailtoafriendButtonBack:hover{
+  text-decoration: none;
+  font-weight:bold;
+  color:#000;
+}
+
+/****************************************************************/
+/* FORMULAR GENERATOR im Flexmodul */
+.formo_block{
+    margin-bottom:5px;
+}
+
+.formo_block input.formoCheck{
+    float:left;
+}
+
+.formo_block span.formo_text {
+    display:block;
+    float:left;
+    width: 122px;
+}
+
+.formo_block span.formo_text2 {
+    display:inline;
+}
+.FormoTextarea{
+    width:386px;
+    height:60px;
+    border: 1px solid #CCC;
+    font-size: 1em;
+    font-family: arial, helvetica, verdana, sans-serif;
+    color: #000000;
+    overflow:visible;
+}
+
+.FormoInput{
+    width:386px;
+    border: 1px solid #CCC;
+    font-size: 1em;
+    font-weight: normal;
+    font-family: arial, helvetica, verdana, sans-serif;
+}
+
+.FormoInput1{
+    width:40px;
+    border: 1px solid #CCC;
+    font-size: 1em;
+    font-weight: normal;
+    font-family: arial, helvetica, verdana, sans-serif;
+    margin: 0px 6px 0px 0px;
+}
+
+.FormoInput2{
+    width:336px;
+    border: 1px solid #CCC;
+    font-size: 1em;
+    font-weight: normal;
+    font-family: arial, helvetica, verdana, sans-serif;
+}
+
+.FormoButton{
+    font-family: arial, helvetica, verdana, sans-serif;
+    font-size: 0.9em;
+    height:19px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 7px 3px 0px;
+    border:1px solid #333;
+}
+
+.FormoButtonBig{
+    font-family: arial, helvetica, verdana, sans-serif;
+    font-size: 0.9em;
+    height:19px;
+    padding: 0px 50px 0px 50px;
+    margin: 0px 7px 3px 0px;
+    border:1px solid #333;
+}
+
+
+.FormoInfoText span{
+    display:block;
+    clear:both;
+}
+
+.FormoAbsenden span.formo_text{
+    display:block;
+    clear:both;
+}
+
+div.FormoAbsenden{
+    clear:both;
+    margin-left:125px;
+}
+
+
+/****************************************************************/
+/* CMS-TOOLS FORM-GENERATOR (von X)*/
+/****************************************************************/
+
+.fg_html {
+  font-size:12px;
+}
+
+.fg_html body {
+  font-family: arial, helvetica, verdana, sans-serif;
+  font-size: 1em;
+}
+
+.fg_feldname {
+  display:block;
+  font-weight:normal;
+  margin-top: 10px;
+  font-family: arial, helvetica, verdana, sans-serif;
+}
+
+.fg_input {
+  border: 1px solid #CCCCCC;
+  margin:0px 0px 0px 0px;
+  font-size: 1em;
+  font-family: arial, helvetica, verdana, sans-serif;
+}
+
+.fg_textarea {
+  width: 200px;
+  height: 100px;
+  overflow:auto;
+}
+
+.fg_button {
+  font-family: arial, helvetica, verdana, sans-serif;
+  font-size: 0.9em;
+  height:19px;
+  padding: 0px 0px 0px 0px;
+  margin: 10px 7px 3px 0px;
+  border:1px solid #333;
+}
+
+.fg_headline {
+  font-weight:bold;
+  font-size:1.2em;
+}
+
+.fg_beschreibungstext {
+  display:block;
+  margin:15px 0px;
+}
+
+/* *********************************** */
+/* Suche ENET                          */
+/* *********************************** */
+.enetInput {
+  width:170px;
+  border:1px solid #CCC;
+  font-family: arial, helvetica, verdana, sans-serif;
+  color: #000000;
+  font-size: 1em;
+}
+html>body .enetInput {
+  width:180px;
+  margin-bottom:2px;
+}
+.enetTextarea {
+  width:450px;
+  height:60px;
+  border: 1px solid #CCC;
+  font-size: 1em;
+  font-family: arial, helvetica, verdana, sans-serif;
+  color: #000000;
+  overflow:visible;
+}
+html>body .enetTextarea {
+  width:460px;
+}
+
+/* Energiekalender-Suche */
+div#ekSucheTextDiv input {
+  width: 100%;
+  border: 1px solid #CCC;
+  font-size: 1em;
+  color: #000000;
+}
+
+.terminListingCriteria {
+  float: left; 
+  margin-left: 48px;
+}

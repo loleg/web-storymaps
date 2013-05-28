@@ -1,0 +1,323 @@
+/* *************************************************************************** */
+/* TEXT-STYLES FÜR WEBSEITE                                                    */
+/* *************************************************************************** */
+
+/* _margin der Unterstrich Hack gilt für Mozilla */
+
+/* *************************************************************************** */
+/* LAYOUT-STYLES FÜR WEBSEITE                                                  */
+/* *************************************************************************** */
+
+body{
+    text-align:left;
+
+}
+
+/* BODY-BEREICH */
+.webBody{
+    margin: 0px;
+    padding: 0px;
+}
+
+#webBodyDiv {
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    width: 806px;
+    text-align: left;
+}
+
+.webBodyBroad {
+    width: 806px;
+}
+
+#printLogo h3, #printLogo2 h3 {
+    font-size:1.2em;
+    border-bottom:1px solid #000;
+    margin-left:48px;
+    width:535px;
+    margin-top:23px;
+}
+
+.webBodyBroad #printLogo h3, .webBodyBroad #printLogo2 h3 {
+    width: 726px;
+    clear:both;
+}
+
+
+/* *************************************************************************** */
+/* HEADER                                                                      */
+/* *************************************************************************** */
+
+/* HEADER-BEREICH */
+#webHeaderDiv {
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    height:166px;
+    background-image: none;
+}
+
+#webHeaderLinks{
+    display:none;
+}
+
+#printLogo{
+    display:block;
+    width:559px;
+    height:72px;
+    margin-left:12px;
+    clear:both;
+}
+
+#printLogo2{
+    display:block;
+    float:left;
+    width:559px;
+    margin-left:6px;
+    margin-bottom:19px;
+}
+
+#printHeader{
+}
+
+#webLogoDiv, .webHeadTitleDiv {
+    display:none;
+}
+
+#webLogoDiv h1 {
+    font-size:1px;
+    line-height:1px;
+}
+
+/* LINKS */
+a, a:link, a:active, a:visited, a:hover {
+  color:#888;
+}
+a.webTextLink, a.webTextLink:link, a.webTextLink:active, a.webTextLink:visited, a.webTextLink:hover {
+  color:#888;
+}
+a.teaserTitleStart, a.teaserTitleStart:link, a.teaserTitleStart:active, a.teaserTitleStart:visited, a.teaserTitleStart:hover {
+  color:#888;
+}
+
+/* *************************************************************************** */
+/* NAVIGATION                                                                  */
+/* *************************************************************************** */
+
+#webGlobalNavigationDiv{
+    display:none;
+}
+
+/* NAVIGATION LINKS */
+#webNavigationDiv, .webNavigationDiv {
+    display:none;
+}
+
+/* NAVIGATOR */
+#webNavigatorDiv {
+    display:none;
+}
+
+/* SERVICE NAVIGATION */
+#webServiceNavigationDiv{
+    display:none;
+}
+
+/* *************************************************************************** */
+/* INHALTSBEREICH                                                              */
+/* *************************************************************************** */
+
+/* CONTENT TOP */
+.webTopContent{
+    display:none;
+}
+
+.webTopContentPrint{
+    display:none;
+}
+
+/* INFO SPALTE */
+#webInfoDivDe, #webInfoDivFr, #webInfoDivIt, #webInfoDivEn {
+    display:none;
+}
+
+#webSucheBroadDiv{
+    display:none;
+}
+
+#webContentDiv {
+    width: 535px;
+    background-image:none;
+    margin:0px 0px 0px 60px;
+    padding: 0px;
+    clear:both;
+}
+
+#webContentDivBroad {
+    width: 726px;
+    background-image:none;
+    margin:0px 0px 0px 60px;
+}
+
+/* CONTENT-BEREICH INNEN (NORMAL) */
+#webInnerContentSmall{
+    /* !! für Mozilla !! */
+    float:none;
+    overflow:visible;
+    /* !! für Mozilla !! */
+    clear:both;
+    padding:0px;
+    margin:0px 0px 0px 0px;
+    width:535px;
+    position:relative;
+}
+
+/* CONTENT-BEREICH INNEN (BREIT) */
+#webInnerContentBroad {
+    /* !! für Mozilla !! */
+    overflow:visible;
+    float:none;
+    /* !! für Mozilla !! */
+    width:726px ;
+    padding:0px;
+    margin:0px 0px 0px 0px;
+}
+
+/* *************************************************************************** */
+/* FOOTER                                                                      */
+/* *************************************************************************** */
+
+#webFooter {
+    width:535px;
+    margin:0px;
+    margin-left:60px;
+    margin-bottom:30px;
+    font-size:0.9em;
+    clear:both;
+}
+
+#webFooterBroad {
+    width:726px;
+    margin:0px;
+    margin-left:60px;
+    margin-bottom:30px;
+    font-size:0.9em;
+    clear:both;
+}
+
+#webFooterText {
+    padding:0px;
+    margin:0px;
+    width:535px;
+}
+
+#webFooter {
+    width: 535px !important;
+}
+
+/* Ausgeben der Url am Seitenende */
+#printUrl{
+    margin: 0px 0px;
+    padding: 0px;
+    width: 535px;
+    display:block;
+    font-size:0.9em;
+}
+
+/* Url bei SitePrinter ausgeben */
+#printUrl2{
+    margin: 0px;
+    margin-left:60px;
+    padding: 0px;
+    width: 535px;
+    display:block;
+    font-size:0.9em;
+}
+
+#showUrl {
+  margin-left:60px;
+  padding-bottom:20px;
+}
+
+/* *************************************************************************** */
+/* DRUCKEN NAVIGATION                                                          */
+/* *************************************************************************** */
+
+@media all
+{
+  #printBack, #printBackBroad{
+    display:block;
+    text-align:right;
+    height: 20px;
+    color:#000;
+    padding: 3px 0px 3px 0px;
+    width:595px;
+    border-bottom:1px dashed #333;
+    margin: 0px 0px 10px 0px;
+  }
+}
+@media all
+{
+    #printBackBroad{
+        width:806px;
+    }
+}
+
+
+@media all
+{
+#printBack2, #printBackBroad2{
+    position:relative;
+    text-align:right;
+    display:block;
+    color:#000;
+    width:595px;
+    padding:5px 0px;
+    border-top:1px dashed #333;
+    margin-top:10px;
+    margin-left:-60px;
+  }
+}
+@media all
+{
+    #printBackBroad2{
+        width:806px;
+    }
+}
+
+@media print
+{
+  /* FORMATDEFINITIONEN ZUM DRUCKEN */
+  #printBack,#printBack2, #printBack,#printBackBroad2{
+    display:none;
+  }
+
+}
+
+/* *************************************************************************** */
+/* SONSTIGES                                                                   */
+/* *************************************************************************** */
+
+.webBlaetternDiv{
+    width:535px;
+}
+
+.printHr   { display: none; }
+
+/* Schnelleinstieg */
+#SBSEmain {
+  display:none;
+}
+
+.webPrintBr{
+    display:block;
+}
+
+/* Text-Kommentare */
+.webTextOnlyComment{
+    display:none;
+}
+
+h3 {
+  font-size:0.7em;
+
+}
