@@ -1,0 +1,1341 @@
+#! <?xml version="1.0" encoding="windows-1252" ?>
+#! <WORKSPACE
+#    
+#    
+#    Windows command-line to run this workspace:
+#    
+#    
+#    fme.exe Storymaps3.fmw
+#          --SourceDataset_POSTGIS uvek
+#          --DestDataset_GEOJSON .\stauanlage.geojson
+#          --DestDataset_CSV .\stauanlagen.csv
+#    
+#    
+#! LAST_SAVE_BUILD="FME(R) 2012 SP1 (20120217 - Build 12224 - WIN32)"
+#! MAX_LOG_FEATURES="200"
+#! SOURCE="NONE"
+#! LEGAL_TERMS_CONDITIONS=""
+#! END_TCL=""
+#! DESTINATION="NONE"
+#! SHOW_BOOKMARKS="true"
+#! GRID_VISIBLE="false"
+#! SHOW_ANNOTATIONS="true"
+#! FME_SERVER_SERVICES=""
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! END_PYTHON=""
+#! CATEGORY=""
+#! REQUIREMENTS_KEYWORD=""
+#! GRID_HEIGHT="50"
+#! FME_REPROJECTION_ENGINE="FME"
+#! FME_BUILD_NUM="12224"
+#! SHOW_INFO_NODES="true"
+#! BEGIN_PYTHON=""
+#! DESCRIPTION=""
+#! GRID_SNAPTO="false"
+#! GRID_WIDTH="50"
+#! BEGIN_TCL=""
+#! FME_STROKE_MAX_DEVIATION="0"
+#! LOG_FILE=""
+#! HISTORY=""
+#! VIEW_POSITION="0 0"
+#! SOURCE_ROUTING_FILE=""
+#! ZOOM_SCALE="100"
+#! PASSWORD=""
+#! VIEW_PAGE_BREAKS="false"
+#! WORKSPACE_VERSION="1"
+#! DESTINATION_ROUTING_FILE=""
+#! LAST_SAVE_DATE="2013-05-29T09:09:02"
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! TITLE=""
+#! USAGE=""
+#! IGNORE_READER_FAILURE="No"
+#! REQUIREMENTS=""
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! REDIRECT_TERMINATORS="NONE"
+#! ATTR_TYPE_ENCODING="SDF"
+#! >
+#! <DATASETS>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="POSTGIS"
+#! DATASET="$(SourceDataset_POSTGIS)"
+#! KEYWORD="POSTGIS_1"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="postgis_sql_where_clause &quot;&quot; postgis_sql_statement &quot;&quot;"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_type char(50) postgis_collection_id int4 fme_text_string char(50) multi_reader_full_id int4 fme_feature_type char(50) fme_basename char(50) multi_reader_type char(50) fme_geometry fme_char(50) postgis_collection_part_id int4 multi_reader_keyword char(50) fme_sweep_angle float8 fme_rotation float8 postgis_type char(50) fme_secondary_axis float8 fme_fill_color char(50) fme_dataset char(50) fme_primary_axis float8 fme_start_angle float8 fme_text_size float8 fme_color char(50) multi_reader_id int4"
+#! DEFLINE_PARMS="&quot;GUI OPTIONAL TEXT postgis_sql_where_clause WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT postgis_sql_statement SELECT Statement&quot; &quot;&quot; "
+#! ATTR_INDEX_TYPES="BTREE RTREE HASH PRIKEY"
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="12224"
+#! MIN_FEATURES=""
+#! START_FEATURE=""
+#! MAX_FEATURES=""
+#! COORDSYS=""
+#! FEATURE_TYPES=""
+#! />
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="GEOJSON"
+#! DATASET="$(DestDataset_GEOJSON)"
+#! KEYWORD="GEOJSON_1"
+#! MULTI_GEOM_ALLOWED="true"
+#! ATTR_MAX_LENGTH="600"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_type string fme_text_string string fme_feature_type string fme_basename string fme_geometry fme_char(50) fme_sweep_angle float fme_rotation float fme_secondary_axis float fme_fill_color string fme_dataset string fme_primary_axis float fme_start_angle float fme_text_size float fme_color string"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="12224"
+#! FANOUT_SUFFIX=""
+#! FANOUT_ID_ATTR=""
+#! COORDSYS=""
+#! FANOUT="No"
+#! FANOUT_DIRECTORY=""
+#! FANOUT_PREFIX=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="application/json ADD_DISPOSITION"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="CSV"
+#! DATASET="$(DestDataset_CSV)"
+#! KEYWORD="CSV_1"
+#! MULTI_GEOM_ALLOWED="true"
+#! ATTR_MAX_LENGTH="32"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="csv_append_mode INHERIT_FROM_WRITER csv_field_names INHERIT_FROM_WRITER"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_type char(50) fme_text_string char(50) fme_feature_type char(50) fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_fill_color char(50) fme_dataset char(50) fme_primary_axis number(31,15) fme_start_angle number(31,15) fme_text_size number(31,15) fme_color char(50)"
+#! DEFLINE_PARMS="&quot;GUI OPTIONAL CHOICE csv_append_mode INHERIT_FROM_WRITER%yes%no Append to file&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL CHOICE csv_field_names INHERIT_FROM_WRITER%yes%no Output Field Names&quot; INHERIT_FROM_WRITER "
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="12224"
+#! FANOUT_SUFFIX=""
+#! FANOUT_ID_ATTR=""
+#! COORDSYS=""
+#! FANOUT="No"
+#! FANOUT_DIRECTORY=""
+#! FANOUT_PREFIX=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="bool"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="varchar(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="bytea"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int2"
+#! FME_TYPE="fme_int16"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int2"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int4"
+#! FME_TYPE="fme_int32"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int4"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int8"
+#! FME_TYPE="fme_int64"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int8"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="oid"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="serial"
+#! FME_TYPE="fme_int32"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float4"
+#! FME_TYPE="fme_real32"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="money"
+#! FME_TYPE="fme_real32"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float8"
+#! FME_TYPE="fme_real64"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float8"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_date"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="time"
+#! FME_TYPE="fme_time"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="timetz"
+#! FME_TYPE="fme_time"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="timestamp"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="timestamptz"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="POSTGIS"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(254)"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(20)"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(12)"
+#! FME_TYPE="fme_time"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(8)"
+#! FME_TYPE="fme_date"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(31,15)"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(15,7)"
+#! FME_TYPE="fme_real32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_int32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_int64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(6,0)"
+#! FME_TYPE="fme_int16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(6,0)"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="string"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="boolean"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="string"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="string"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="string"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="string"
+#! FME_TYPE="fme_time"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="string"
+#! FME_TYPE="fme_date"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real64"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real32"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int32"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int64"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int16"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="object"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="array"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="GEOJSON"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="object_or_array"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="GEOJSON"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multipoint"
+#! FME_TYPE="fme_point"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_point"
+#! FME_TYPE="fme_point"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multilinestring"
+#! FME_TYPE="fme_line"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multicurve"
+#! FME_TYPE="fme_line"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_linestring"
+#! FME_TYPE="fme_line"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_circularstring"
+#! FME_TYPE="fme_line"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_compoundcurve"
+#! FME_TYPE="fme_line"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multipolygon"
+#! FME_TYPE="fme_area"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multisurface"
+#! FME_TYPE="fme_area"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_polygon"
+#! FME_TYPE="fme_area"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_curvepolygon"
+#! FME_TYPE="fme_area"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multipolygon"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multipolygon"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multipoint"
+#! FME_TYPE="fme_text"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multipolygon"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multilinestring"
+#! FME_TYPE="fme_arc"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_geometry"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_geometrycollection"
+#! FME_TYPE="fme_collection"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multipolygon"
+#! FME_TYPE="fme_raster"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multilinestring"
+#! FME_TYPE="fme_surface"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multilinestring"
+#! FME_TYPE="fme_solid"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="postgis_multipolygon"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="POSTGIS"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_line"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_area"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_text"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_arc"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_map"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_raster"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_surface"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_solid"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_point"
+#! FME_TYPE="fme_point"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_line"
+#! FME_TYPE="fme_line"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_polygon"
+#! FME_TYPE="fme_area"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_text"
+#! FME_TYPE="fme_text"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_ellipse"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_arc"
+#! FME_TYPE="fme_arc"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_rectangle"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_rounded_rectangle"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_raster"
+#! FME_TYPE="fme_raster"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_no_geom"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_collection"
+#! FME_TYPE="fme_collection"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_line"
+#! FME_TYPE="fme_surface"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_line"
+#! FME_TYPE="fme_solid"
+#! FORMAT="GEOJSON"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="json_polygon"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="GEOJSON"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="bfe.stauanlagen_bundesaufsicht"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="0"
+#! FEAT_GEOMTYPE="postgis_point"
+#! POSITION="179 -40"
+#! ORDER="2"
+#! COLLAPSED="true"
+#! KEYWORD="POSTGIS_1"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="reservoir_stabil_id" ATTR_TYPE="int4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="crestlevel" ATTR_TYPE="float4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damheight" ATTR_TYPE="float4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="impoundmentlevel" ATTR_TYPE="float4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="riverid" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="startsupervision" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="endsupervision" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facility_stabil_id" ATTR_TYPE="int4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityr2" ATTR_TYPE="int4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityr3" ATTR_TYPE="int4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype_en" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityr1" ATTR_TYPE="int4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityname" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="reservoirname" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="dam_stabil_id" ATTR_TYPE="int8,PRIKEY"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="crestlength" ATTR_TYPE="float4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="has_picture" ATTR_TYPE="int2"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="supervision_stabil_id" ATTR_TYPE="int4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facaim_en" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype_fr" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="lakename" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="impoundmentvolume" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype_de" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facaim_fr" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facaim_de" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="beginningofoperation" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="lakeid" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damname" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="rivername" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_modified" ATTR_TYPE="timestamp"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_created" ATTR_TYPE="timestamp"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_modified_by" ATTR_TYPE="varchar(50)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_created_by" ATTR_TYPE="varchar(50)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_id" ATTR_TYPE="serial,PRIKEY"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype" ATTR_TYPE="int4"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="storagelevel" ATTR_TYPE="float4"/>
+#! <DEFLINE_PARM PARM_NAME="postgis_sql_where_clause" PARM_VALUE="damheight&gt;100"/>
+#! <DEFLINE_PARM PARM_NAME="postgis_sql_statement" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="stauanalgen"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="1"
+#! FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#! POSITION="1376 -41"
+#! ORDER="3"
+#! COLLAPSED="false"
+#! KEYWORD="GEOJSON_1"
+#! ENABLED="true"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="reservoir_stabil_id" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="crestlevel" ATTR_TYPE="float"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damheight" ATTR_TYPE="float"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="impoundmentlevel" ATTR_TYPE="float"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="riverid" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="startsupervision" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="endsupervision" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facility_stabil_id" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityr2" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityr3" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype_en" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityr1" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityname" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="reservoirname" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="dam_stabil_id" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="crestlength" ATTR_TYPE="float"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="has_picture" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="supervision_stabil_id" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facaim_en" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype_fr" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="lakename" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="impoundmentvolume" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype_de" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facaim_fr" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facaim_de" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="beginningofoperation" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="lakeid" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damname" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="rivername" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_modified" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_created" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_modified_by" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_created_by" ATTR_TYPE="string"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_id" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="storagelevel" ATTR_TYPE="float"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="stauanlagen"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="3"
+#! FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#! POSITION="797 -280"
+#! ORDER="4"
+#! COLLAPSED="false"
+#! KEYWORD="CSV_1"
+#! ENABLED="true"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="reservoir_stabil_id" ATTR_TYPE="number(11,0)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="crestlevel" ATTR_TYPE="number(15,7)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damheight" ATTR_TYPE="number(15,7)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="impoundmentlevel" ATTR_TYPE="number(15,7)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="riverid" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="startsupervision" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="endsupervision" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facility_stabil_id" ATTR_TYPE="number(11,0)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityr2" ATTR_TYPE="number(11,0)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityr3" ATTR_TYPE="number(11,0)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype_en" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityr1" ATTR_TYPE="number(11,0)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facilityname" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="reservoirname" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="dam_stabil_id" ATTR_TYPE="number(11,0)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="crestlength" ATTR_TYPE="number(15,7)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="has_picture" ATTR_TYPE="number(6,0)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="supervision_stabil_id" ATTR_TYPE="number(11,0)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facaim_en" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype_fr" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="lakename" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="impoundmentvolume" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype_de" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facaim_fr" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="facaim_de" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="beginningofoperation" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="lakeid" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damname" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="rivername" ATTR_TYPE="char(254)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_modified" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_created" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_modified_by" ATTR_TYPE="char(50)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_created_by" ATTR_TYPE="char(50)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="bgdi_id" ATTR_TYPE="number(11,0)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="damtype" ATTR_TYPE="number(11,0)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="storagelevel" ATTR_TYPE="number(15,7)"/>
+#! <DEFLINE_PARM PARM_NAME="csv_append_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="csv_field_names" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI OPTIONAL TEXT SourceDataset_POSTGIS Source PostGIS Dataset:"
+#! DEFAULT_VALUE="uvek"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI FILENAME DestDataset_GEOJSON GeoJSON_Files(*.json)|*.json|All_Files|*.* Destination GeoJSON File:"
+#! DEFAULT_VALUE=".\stauanlage.geojson"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI DIRNAME DestDataset_CSV Destination Comma Separated Value (CSV) Directory:"
+#! DEFAULT_VALUE=".\stauanlagen.csv"
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="2"
+#! SOURCE_NODE="0"
+#! TARGET_NODE="1"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS="567 -79"
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="4"
+#! SOURCE_NODE="0"
+#! TARGET_NODE="3"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+#! 
+GUI IGNORE SourceDataset_POSTGIS_1,POSTGIS_IN_HOST_POSTGIS_1,POSTGIS_IN_PORT_POSTGIS_1,POSTGIS_IN_USER_NAME_POSTGIS_1,POSTGIS_IN_PASSWORD_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_1,POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_1,POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_1,POSTGIS_IN_SEARCH_METHOD_POSTGIS_1,POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_1,DestDataset_GEOJSON_1,GEOJSON_OUT_WRITER_CHARSET_GEOJSON_1,GEOJSON_OUT_WRITE_BOM_GEOJSON_1,GEOJSON_OUT_WRITE_NULL_ATTRIBUTE_VALUES_GEOJSON_1,GEOJSON_OUT_STRICT_SPEC_GEOJSON_1,GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_1,DestDataset_CSV_1,CSV_OUT_APPEND_CSV_1,CSV_OUT_FIELD_NAMES_CSV_1,CSV_OUT_SEPARATOR_CSV_1,CSV_OUT_EXTENSION_CSV_1,_OUT_QUOTE_OUTPUT_CSV_1,_QUOTE_FIELD_NAMES_CSV_1,CSV_OUT_ENCODING_CSV_1,CSV_OUT_END_OF_LINE_CSV_1,_WRITE_UTF8_BOM_CSV_1
+
+
+
+DEFAULT_MACRO SourceDataset_POSTGIS uvek
+GUI OPTIONAL TEXT SourceDataset_POSTGIS Source PostGIS Dataset:
+DEFAULT_MACRO DestDataset_GEOJSON .\stauanlage.geojson
+GUI FILENAME DestDataset_GEOJSON GeoJSON_Files(*.json)|*.json|All_Files|*.* Destination GeoJSON File:
+DEFAULT_MACRO DestDataset_CSV .\stauanlagen.csv
+GUI DIRNAME DestDataset_CSV Destination Comma Separated Value (CSV) Directory:
+INCLUDE TCL
+proc __FME_ExpandMacros {text {maxlevels 100}} {
+   if { $maxlevels <= 0 } { return $text; }
+   set pattern [join {{\$} {\([^()$]*\)}} {}]
+   set indices [regexp -inline -all -indices $pattern $text]
+   if [llength $indices] {
+      foreach pair [lreverse $indices] {
+         lassign $pair start end
+         set replacement {}
+         set replacement $::FME_MacroValues([string range $text [expr $start + 2] [expr $end - 1]])
+         set text [string replace $text $start $end $replacement]
+      }
+      return [__FME_ExpandMacros $text [expr $maxlevels - 1]]
+   }
+   return $text
+}
+
+proc __FME_ExpandEnvVars {text {maxlevels 100}} {
+   if { $maxlevels <= 0 } { return $text; }
+   set pattern [join {{\$} {\{[^\{\}$]*\}}} {}]
+   set indices [regexp -inline -all -indices $pattern $text]
+   if [llength $indices] {
+      foreach pair [lreverse $indices] {
+         lassign $pair start end
+         set replacement {}
+         set replacement $::env([string range $text [expr $start + 2] [expr $end - 1]])
+         set text [string replace $text $start $end $replacement]
+      }
+      return [__FME_ExpandEnvVars $text [expr $maxlevels - 1]]
+   }
+   return $text
+}
+
+proc __FME_EvalAndEncodeMacro {macroName} {
+   set macroVal {}
+   catch { set macroVal [__FME_ExpandMacros $::FME_MacroValues($macroName)] }
+   catch { set macroVal [__FME_ExpandEnvVars $macroVal] }
+   return [FME_EncodeText $macroVal]
+}
+END_INCLUDE
+INCLUDE [	puts "MACRO SourceDataset_POSTGIS__FMEENCODED__ [__FME_EvalAndEncodeMacro SourceDataset_POSTGIS]" ;   ]
+
+INCLUDE [	puts "MACRO DestDataset_GEOJSON__FMEENCODED__ [__FME_EvalAndEncodeMacro DestDataset_GEOJSON]" ;   ]
+
+INCLUDE [	puts "MACRO DestDataset_CSV__FMEENCODED__ [__FME_EvalAndEncodeMacro DestDataset_CSV]" ;   ]
+
+INCLUDE [ if {{$(DestDataset_GEOJSON)} == {}} { puts_real {Parameter 'DestDataset_GEOJSON' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_CSV)} == {}} { puts_real {Parameter 'DestDataset_CSV' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE POSTGIS
+READER_KEYWORD POSTGIS_1
+READER_GEN_DIRECTIVES USE_SEARCH_ENVELOPE,NO,DISABLE_COLLECTION_SPLITTING,yes,_MERGE_SCHEMAS,YES,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_MAXX,0,PORT,5432,HOST,bgdipg01t.lt.admin.ch,USER_NAME,www-data,SEARCH_ENVELOPE_MINX,0,TABLELIST,bfe.stauanlagen_bundesaufsicht,CLIP_TO_ENVELOPE,NO,SEARCH_ENVELOPE_MINY,0,POSTGIS_EXPOSE_FORMAT_ATTRS,,USE_TRUE_POSTGIS_TYPES,yes
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} GEOJSON
+MULTI_WRITER_KEYWORD{0} GEOJSON_1
+MULTI_WRITER_TYPE{1} CSV
+MULTI_WRITER_KEYWORD{1} CSV_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "POSTGIS_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER POSTGIS POSTGIS_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_POSTGIS_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER POSTGIS POSTGIS_1
+DEFAULT_MACRO SourceDataset_POSTGIS_1 $(SourceDataset_POSTGIS)
+GUI OPTIONAL TEXT SourceDataset_POSTGIS_1 Source PostGIS Dataset:
+DEFAULT_MACRO POSTGIS_IN_DISABLE_COLLECTION_SPLITTING_POSTGIS_1 yes
+POSTGIS_1_DISABLE_COLLECTION_SPLITTING "$(POSTGIS_IN_DISABLE_COLLECTION_SPLITTING_POSTGIS_1)"
+DEFAULT_MACRO POSTGIS_IN_USE_TRUE_POSTGIS_TYPES_POSTGIS_1 yes
+POSTGIS_1_USE_TRUE_POSTGIS_TYPES "$(POSTGIS_IN_USE_TRUE_POSTGIS_TYPES_POSTGIS_1)"
+DEFAULT_MACRO POSTGIS_IN_HOST_POSTGIS_1 bgdipg01t.lt.admin.ch
+POSTGIS_1_HOST "$(POSTGIS_IN_HOST_POSTGIS_1)"
+GUI TEXT POSTGIS_IN_HOST_POSTGIS_1 Host:
+DEFAULT_MACRO POSTGIS_IN_PORT_POSTGIS_1 5432
+POSTGIS_1_PORT "$(POSTGIS_IN_PORT_POSTGIS_1)"
+GUI INTEGER POSTGIS_IN_PORT_POSTGIS_1 Port:
+DEFAULT_MACRO POSTGIS_IN_USER_NAME_POSTGIS_1 .
+POSTGIS_1_USER_NAME "$(POSTGIS_IN_USER_NAME_POSTGIS_1)"
+GUI TEXT POSTGIS_IN_USER_NAME_POSTGIS_1 Username:
+DEFAULT_MACRO POSTGIS_IN_PASSWORD_POSTGIS_1 
+POSTGIS_1_PASSWORD "$(POSTGIS_IN_PASSWORD_POSTGIS_1)"
+GUI OPTIONAL PASSWORD POSTGIS_IN_PASSWORD_POSTGIS_1 Password:
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_1 0
+POSTGIS_1_SEARCH_ENVELOPE "$(POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_1)"
+GUI OPTIONAL FLOAT POSTGIS_IN_SEARCH_ENVELOPE_MINX_POSTGIS_1 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_1 0
+POSTGIS_1_SEARCH_ENVELOPE "$(POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_1)"
+GUI OPTIONAL FLOAT POSTGIS_IN_SEARCH_ENVELOPE_MINY_POSTGIS_1 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_1 0
+POSTGIS_1_SEARCH_ENVELOPE "$(POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_1)"
+GUI OPTIONAL FLOAT POSTGIS_IN_SEARCH_ENVELOPE_MAXX_POSTGIS_1 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_1 0
+POSTGIS_1_SEARCH_ENVELOPE "$(POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_1)"
+GUI OPTIONAL FLOAT POSTGIS_IN_SEARCH_ENVELOPE_MAXY_POSTGIS_1 Maximum Y:
+# ===========================================================================
+DEFAULT_MACRO POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_1 NO
+POSTGIS_1_CLIP_TO_ENVELOPE "$(POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_1)"
+GUI OPTIONAL CHECKBOX POSTGIS_IN_CLIP_TO_ENVELOPE_POSTGIS_1 YES%NO Clip to Search Envelope
+# ============================================================================
+# Search Envelope Coordinate System
+DEFAULT_MACRO POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_1 
+GUI OPTIONAL COORDSYS POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_1 Search Envelope Coordinate System:
+POSTGIS_1_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(POSTGIS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_POSTGIS_1)"
+DEFAULT_MACRO POSTGIS_IN_SEARCH_METHOD_POSTGIS_1 MBR_OVERLAPS
+GUI CHOICE POSTGIS_IN_SEARCH_METHOD_POSTGIS_1 MBR_OVERLAPS%CONTAINS%DISJOINT%EQUALS%INTERSECTS%OVERLAPS%TOUCHES%WITHIN Search Method:
+POSTGIS_1_SEARCH_METHOD $(POSTGIS_IN_SEARCH_METHOD_POSTGIS_1)
+DEFAULT_MACRO POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_1 10000
+GUI FLOAT POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_1 Number Of Records To Fetch At A Time:
+POSTGIS_1_FEATURES_PER_FETCH $(POSTGIS_IN_FEATURES_PER_FETCH_POSTGIS_1)
+POSTGIS_1_DATASET "$(SourceDataset_POSTGIS_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GEOJSON_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER GEOJSON GEOJSON_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_GEOJSON_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER GEOJSON GEOJSON_1
+DEFAULT_MACRO DestDataset_GEOJSON_1 $(DestDataset_GEOJSON)
+GUI FILENAME DestDataset_GEOJSON_1 GeoJSON_Files(*.json)|*.json|All_Files|*.* Destination GeoJSON File:
+DEFAULT_MACRO GEOJSON_OUT_WRITER_CHARSET_GEOJSON_1 UTF-8
+GEOJSON_1_WRITER_CHARSET "$(GEOJSON_OUT_WRITER_CHARSET_GEOJSON_1)"
+GUI CHOICE GEOJSON_OUT_WRITER_CHARSET_GEOJSON_1 UTF-8%UTF-16%UTF-16BE%UTF-16LE%UTF-32%UTF-32BE%UTF-32LE Output Character Set:
+DEFAULT_MACRO GEOJSON_OUT_WRITE_BOM_GEOJSON_1 No
+GEOJSON_1_WRITE_BOM "$(GEOJSON_OUT_WRITE_BOM_GEOJSON_1)"
+GUI CHOICE GEOJSON_OUT_WRITE_BOM_GEOJSON_1 Yes%No Byte Order Marker:
+DEFAULT_MACRO GEOJSON_OUT_WRITE_NULL_ATTRIBUTE_VALUES_GEOJSON_1 No
+GEOJSON_1_WRITE_NULL_ATTRIBUTE_VALUES "$(GEOJSON_OUT_WRITE_NULL_ATTRIBUTE_VALUES_GEOJSON_1)"
+GUI CHOICE GEOJSON_OUT_WRITE_NULL_ATTRIBUTE_VALUES_GEOJSON_1 Yes%No Write 'null' for Attributes with No Value:
+DEFAULT_MACRO GEOJSON_OUT_STRICT_SPEC_GEOJSON_1 Yes
+GEOJSON_1_STRICT_SPEC "$(GEOJSON_OUT_STRICT_SPEC_GEOJSON_1)"
+GUI CHOICE GEOJSON_OUT_STRICT_SPEC_GEOJSON_1 Yes%No Fully Conform to the GeoJSON Grammar:
+DEFAULT_MACRO GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_1 
+GEOJSON_1_JSONP_FUNC_NAME "$(GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_1)"
+GUI OPTIONAL TEXT GEOJSON_OUT_JSONP_FUNC_NAME_GEOJSON_1 JSONP Function Name (optional):
+GEOJSON_1_DATASET "$(DestDataset_GEOJSON_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_1
+# ============================================================================
+# The following GUI line prompts for a directory where the
+# CSV files will be stored
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_CSV_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_1
+DEFAULT_MACRO DestDataset_CSV_1 $(DestDataset_CSV)
+GUI DIRNAME DestDataset_CSV_1 Destination Comma Separated Value (CSV) Directory:
+CSV_1_PLUGIN_MAX_CHANNELS 100
+# =====================================================================
+# Allows one to append
+DEFAULT_MACRO CSV_OUT_APPEND_CSV_1 No
+CSV_1_APPEND "$(CSV_OUT_APPEND_CSV_1)"
+GUI CHECKBOX CSV_OUT_APPEND_CSV_1 Yes%No Append to File
+# ============================================================================
+# The following determines whether field names will be written on
+# the first row of the file.
+DEFAULT_MACRO CSV_OUT_FIELD_NAMES_CSV_1 yes
+CSV_1_FIELD_NAMES "$(CSV_OUT_FIELD_NAMES_CSV_1)"
+GUI CHECKBOX CSV_OUT_FIELD_NAMES_CSV_1 yes%no Output Field Names on First Line
+# ============================================================================
+# The following determines the field seperator
+# PR#19714 Changed GUI LOOKUP to STRING_OR_CHOICE for showing space and tab
+# as explicit delimiters for parsing issues and symmetry with the reader.
+DEFAULT_MACRO CSV_OUT_SEPARATOR_CSV_1 ,
+CSV_1_SEPARATOR "$(CSV_OUT_SEPARATOR_CSV_1)"
+GUI OPTIONAL STRING_OR_CHOICE CSV_OUT_SEPARATOR_CSV_1 ,%;%|%space%tab Separator Character:
+# ============================================================================
+# The following determines the extension for output CSV files
+DEFAULT_MACRO CSV_OUT_EXTENSION_CSV_1 csv
+CSV_1_EXTENSION "$(CSV_OUT_EXTENSION_CSV_1)"
+GUI OPTIONAL TEXT CSV_OUT_EXTENSION_CSV_1 Extension:
+# ============================================================================
+# The following specifies if output values should be quoted
+DEFAULT_MACRO _OUT_QUOTE_OUTPUT_CSV_1 if_needed
+GUI CHOICE _OUT_QUOTE_OUTPUT_CSV_1 yes%if_needed%no Quote Output Values:
+CSV_1_QUOTE_OUTPUT $(_OUT_QUOTE_OUTPUT_CSV_1)
+# ============================================================================
+# The following choice determines if field names on the first row
+# should be quoted or not.
+DEFAULT_MACRO _QUOTE_FIELD_NAMES_CSV_1 no
+GUI CHOICE _QUOTE_FIELD_NAMES_CSV_1 yes%no Quote Field Names:
+CSV_1_QUOTE_FIELD_NAMES $(_QUOTE_FIELD_NAMES_CSV_1)
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO CSV_OUT_ENCODING_CSV_1 UTF-8
+GUI OPTIONAL STRING_OR_CHOICE CSV_OUT_ENCODING_CSV_1 UTF-8%UTF-16LE%UTF-16BE%ANSI%BIG5%SJIS%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO8859-13%ISO8859-15 Character Encoding:
+CSV_1_ENCODING $(CSV_OUT_ENCODING_CSV_1)
+# =====================================================================
+# Allows to set Line termination type
+DEFAULT_MACRO CSV_OUT_END_OF_LINE_CSV_1 
+GUI OPTIONAL CHOICE CSV_OUT_END_OF_LINE_CSV_1 Windows%Unix%Macintosh Line Termination:
+CSV_1_END_OF_LINE $(CSV_OUT_END_OF_LINE_CSV_1)
+# ============================================================================
+# PR 15909
+# The following choice determines if the byte order mark should be written
+# when using UTF-8 encoding. By default BOM is written, so _WRITE_UTF8_BOM should be yes.
+DEFAULT_MACRO _WRITE_UTF8_BOM_CSV_1 yes
+GUI CHOICE _WRITE_UTF8_BOM_CSV_1 yes%no Write UTF-8 Byte Order Mark
+CSV_1_WRITE_UTF8_BOM $(_WRITE_UTF8_BOM_CSV_1)
+CSV_1_DATASET "$(DestDataset_CSV_1)"
+#! END_DEST_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Storymaps3.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_POSTGIS_1 POSTGIS_1
+DEFAULT_MACRO DATASET_KEYWORD_GEOJSON_1 GEOJSON_1
+DEFAULT_MACRO DATASET_KEYWORD_CSV_1 CSV_1
+# -------------------------------------------------------------------------
+
+POSTGIS_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Storymaps3
+MACRO FME_VIEWER_APP fmeview
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+POSTGIS_1_DEF bfe.stauanlagen_bundesaufsicht   postgis_sql_where_clause     damheight>100   postgis_sql_statement        ""   reservoir_stabil_id          int4   crestlevel                   float4   damheight                    float4   impoundmentlevel             float4   riverid                      text   startsupervision             text   endsupervision               text   facility_stabil_id           int4   facilityr2                   int4   facilityr3                   int4   damtype_en                   text   facilityr1                   int4   facilityname                 text   reservoirname                text   dam_stabil_id                int8,PRIKEY   crestlength                  float4   has_picture                  int2   supervision_stabil_id        int4   facaim_en                    text   damtype_fr                   text   lakename                     text   impoundmentvolume            text   damtype_de                   text   facaim_fr                    text   facaim_de                    text   beginningofoperation         text   lakeid                       text   damname                      text   rivername                    text   bgdi_modified                timestamp   bgdi_created                 timestamp   bgdi_modified_by             varchar(50)   bgdi_created_by              varchar(50)   bgdi_id                      serial,PRIKEY   damtype                      int4   storagelevel                 float4
+
+# -------------------------------------------------------------------------
+
+Lookup ___KnownFeatureTypes___   bfe.stauanlagen_bundesaufsicht yes   "" no
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEATURE_TYPE *   TEST @Lookup(___KnownFeatureTypes___,@FeatureType()) == yes   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(POSTGIS,FME_GENERIC,PRESERVE_GEOMETRY)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "bfe.stauanlagen_bundesaufsicht (POSTGIS_1) Splitter"    INPUT FEATURE_TYPE bfe.stauanlagen_bundesaufsicht    OUTPUT FEATURE_TYPE bfe.stauanlagen_bundesaufsicht_0    OUTPUT FEATURE_TYPE bfe.stauanlagen_bundesaufsicht_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "bfe.stauanlagen_bundesaufsicht_0 -> stauanalgen Correlator"    INPUT FEATURE_TYPE bfe.stauanlagen_bundesaufsicht_0    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,GEOJSON)       @SupplyAttributes(__wb_out_feat_type__,stauanalgen)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "bfe.stauanlagen_bundesaufsicht_1 -> stauanlagen Correlator"    INPUT FEATURE_TYPE bfe.stauanlagen_bundesaufsicht_1    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,CSV)       @SupplyAttributes(__wb_out_feat_type__,stauanlagen)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 {@Value(fme_template_feature_type)} 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+GEOJSON_1_DEF stauanalgen   reservoir_stabil_id          int   crestlevel                   float   damheight                    float   impoundmentlevel             float   riverid                      string   startsupervision             string   endsupervision               string   facility_stabil_id           int   facilityr2                   int   facilityr3                   int   damtype_en                   string   facilityr1                   int   facilityname                 string   reservoirname                string   dam_stabil_id                int   crestlength                  float   has_picture                  int   supervision_stabil_id        int   facaim_en                    string   damtype_fr                   string   lakename                     string   impoundmentvolume            string   damtype_de                   string   facaim_fr                    string   facaim_de                    string   beginningofoperation         string   lakeid                       string   damname                      string   rivername                    string   bgdi_modified                string   bgdi_created                 string   bgdi_modified_by             string   bgdi_created_by              string   bgdi_id                      int   damtype                      int   storagelevel                 float
+# -------------------------------------------------------------------------
+CSV_1_DEF stauanlagen   csv_append_mode              INHERIT_FROM_WRITER   csv_field_names              INHERIT_FROM_WRITER   reservoir_stabil_id          number(11,0)   crestlevel                   number(15,7)   damheight                    number(15,7)   impoundmentlevel             number(15,7)   riverid                      char(254)   startsupervision             char(254)   endsupervision               char(254)   facility_stabil_id           number(11,0)   facilityr2                   number(11,0)   facilityr3                   number(11,0)   damtype_en                   char(254)   facilityr1                   number(11,0)   facilityname                 char(254)   reservoirname                char(254)   dam_stabil_id                number(11,0)   crestlength                  number(15,7)   has_picture                  number(6,0)   supervision_stabil_id        number(11,0)   facaim_en                    char(254)   damtype_fr                   char(254)   lakename                     char(254)   impoundmentvolume            char(254)   damtype_de                   char(254)   facaim_fr                    char(254)   facaim_de                    char(254)   beginningofoperation         char(254)   lakeid                       char(254)   damname                      char(254)   rivername                    char(254)   bgdi_modified                char(20)   bgdi_created                 char(20)   bgdi_modified_by             char(50)   bgdi_created_by              char(50)   bgdi_id                      number(11,0)   damtype                      number(11,0)   storagelevel                 number(15,7)
