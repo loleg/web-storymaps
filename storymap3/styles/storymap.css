@@ -149,7 +149,7 @@ a, a:hover{
 #lo{
 	position: absolute;	
 	top: 0px;
-	bottom: 320px;
+	bottom: 250px;
 	width: 100%;
 }
 
@@ -159,7 +159,7 @@ a, a:hover{
 }
 
 #lu{
-	height: 320px;
+	height: 250px;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -169,7 +169,7 @@ a, a:hover{
 
 #objectInfo{
 	display: none;
-	padding: 30px ;	
+	padding: 10px 30px 10px;	
 }
 
 
@@ -242,11 +242,9 @@ table {
 }
 
 td	{
-	height: 50px;
+	height: 37px;
 	vertical-align: top;
 }
-
-td
 
 #stauanlage { 
 	font-size: 1.7em;	
