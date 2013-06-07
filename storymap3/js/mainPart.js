@@ -24,6 +24,8 @@ function workLoad(){
 		}
 	});
 	
+	changeHeader();
+	
 	// create main map 
 	detailMap = new GeoAdmin.Map("detailMap", {
 	//	doZoomToMaxExtent: true
@@ -194,11 +196,6 @@ function workLoad(){
 				return '<h1 class="tips" >' + name + '<br>' + number + ' m  </h1>';
 			}
 		});
-
-
-
-
-
-	
 	});
+
 }
