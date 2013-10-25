@@ -7,7 +7,7 @@ The geometiry point are static, i.e., they have been retreived from the BGDI Pos
 2) Open the file with FME 
 3) Add the correct username and password for accessing the database (bafu [POSTGIS] -> Parameters -> Username + Password)
 4) Run the script
-5) Replace the outputed stauanlangen.csv and stauanlagen.geojson,  files on the server (./storymap4/data/).
+5) Replace the outputed hydromessstationen.geojson,  files on the server (./storymap4/data/).
 
 
 
